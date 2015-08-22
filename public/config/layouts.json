@@ -1,0 +1,253 @@
+{
+	"layout_data": [
+		{
+			"name": "Past, Present, Future",
+			"class": "layout-ppf",
+			"description": "This is a three card reading covering the past, present, and future.",
+			"grid_items": [
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 1,
+					"name": "Past",
+					"description": ""
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 2,
+					"name": "Present",
+					"description": ""
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 3,
+					"name": "Future",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "The Cross",
+			"class": "layout-the-cross",
+			"description": "This spread is good for advice. It is a simple but versatile spread which can also be used to determine the meaning of a confusing card from a previous reading, or to clear up other points of confusion.",
+			"grid_items": [
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 3,
+					"name": "DO This",
+					"description": ""
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 1,
+					"name": "It Deals with This",
+					"description": ""
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 2,
+					"name": "Do NOT Do This",
+					"description": ""
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 4,
+					"name": "It Leads to This",
+					"description": ""
+				}
+			]
+		},
+		{
+			"name": "Celtic Cross",
+			"class": "layout-celtic-cross",
+			"description": "An ancient Celtic method of reading involving 10 cards. This spread is one of the most commonly called upon by readers of all levels. A very practical spread for questions of all types.",
+			"grid_items": [
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 3,
+					"name": "The Crown",
+					"description": "The Crown - Stands for what the asker is aware of consciously."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 10,
+					"name": "The Outcome",
+					"description": "The Outcome - Interpret this card in the context of the entire reading and as an indicator of the path you are currently on, but not necessarily bound to."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 5,
+					"name": "The Recent Past",
+					"description": "The Recent Past - Represents past events and concerns."
+				},
+				{
+					"active": 1,
+					"num": 1,
+					"name": "The Significator",
+					"description": "The Significator - Represents what the main theme of the reading deals with, the initial situation."
+				},
+				{
+					"active": 1,
+					"num": 6,
+					"name": "The Future",
+					"description": "The Future - Depicts that which lies ahead."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 9,
+					"name": "Hopes and Fears",
+					"description": "Hopes and Fears - Shows the expectations you have concerning the outcome of your question."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 2,
+					"name": "The Crossing Card",
+					"description": "The Crossing Card - Denotes an added impulse that compounds the initial card, whether complimentary or contradictory."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 8,
+					"name": "External Forces",
+					"description": "External Forces - Represents the influence of others in your life as well as trends in your relationships with others."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 4,
+					"name": "Foundation Card",
+					"description": "Foundation Card - Reveals unconscious driving forces that the querent may not be aware of."
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 0
+				},
+				{
+					"active": 1,
+					"num": 7,
+					"name": "The Querent",
+					"description": "The Querent - Represents the asker and their attitude towards the subject of the reading."
+				},
+				{
+					"active": 0
+				}
+			]
+		}
+	]
+}

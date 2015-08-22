@@ -1,0 +1,19 @@
+<section class="tarot-reading">
+
+	<div class="tarot-layout" ng-class="layoutData.class">
+		<div class="tarot-grid-item" ng-class="{ 'active': gridItem.active, 'has-card': gridItem.card }" ng-repeat="gridItem in layoutData.grid_items">
+			<div ng-if="gridItem.card" class="tarot-card tarot-card-{{ gridItem.num }} animated" ng-class="{ 'reversed': gridItem.card.reversed && showReversals }" ng-click="viewCard(gridItem.card.url_path, gridItem.card.reversed, gridItem.description)">
+				<img ng-src="{{ gridItem.card.image_url }}" alt="{{ gridItem.card.name }}">
+			</div>
+			<span class="position-num">{{ gridItem.num }}</span>
+			<span class="position-name">{{ gridItem.name }}</span>
+		</div>
+	</div>
+
+	<!-- <div class="tarot-cards">
+		<div ng-class="{ reversed: card.reversed && showReversals }" class="tarot-card tarot-card-{{ $index }}" ng-click="viewCard(card.url_path, card.reversed)" ng-repeat="card in cards">
+			<img ng-src="{{ card.image_url }}" alt="{{ card.name }}">
+		</div>
+	</div> -->
+
+</section>

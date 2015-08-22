@@ -1,0 +1,117 @@
+/*	--------------------------------------------------------
+	_base.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ COLORS
+	-------------------------------------------------------- */
+
+$color-primary: #6A1DFF;
+$color-accent: #FF9F37;
+$color-accent2: #0CB227;
+$color-primary-darker: #3F03B2;
+
+
+
+/*	--------------------------------------------------------
+	+ BASE STYLES
+	-------------------------------------------------------- */
+
+body {
+	font-family: Georgia, serif;
+	color: white;
+	background-color: #1a1a1a;
+	text-rendering: optimizeLegibility;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.app-wrap {
+	position: absolute;
+	@include size(100%);
+
+	&.wood1 {
+		@include retina-image('../images/bgs/wood1', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.wood2 {
+		@include retina-image('../images/bgs/wood2', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.wood3 {
+		@include retina-image('../images/bgs/wood3', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.dark-stone {
+		@include retina-image('../images/bgs/dark_stone', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.lost-blue {
+		@include retina-image('../images/bgs/lost_blue', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&.moon-power {
+		@include retina-image('../images/bgs/moon_power', '', 'jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+h1.view-title {
+	font-size: em(40);
+	font-weight: normal;
+	font-style: italic;
+	letter-spacing: 1px;
+	text-shadow: 3px 2px 0 black;
+	margin: 0;
+}
+
+
+
+/*	--------------------------------------------------------
+	+ VIEWS
+	-------------------------------------------------------- */
+
+.app-view {
+	&.ng-enter {
+		@include animation(fade-down-in 0.5s ease-out);
+	}
+
+	&.ng-leave {
+		@include animation(fade-up-out 0.5s ease-out);
+	}
+
+	// &.ng-enter-active {
+
+	// }
+
+	&.ng-leave-active {
+		display: none;
+	}
+}
+
+.view-wrap {
+	margin: 100px auto 0 auto;
+}

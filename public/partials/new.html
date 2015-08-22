@@ -1,0 +1,17 @@
+<section class="new view-wrap">
+
+	<div class="title-wrap">
+		<h1 class="view-title">New Reading</h1>
+		<h2>Select Layout</h2>
+	</div>
+
+	<div class="contents">
+		<ul class="tarot-layouts">
+			<li ng-repeat="layout in layouts" ng-click="selectLayout(layout.name)">
+				{{ layout.name }}
+				<span class="description">{{ layout.description }}</span>
+			</li>
+		</ul>
+	</div>
+
+</section>

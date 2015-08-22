@@ -1,0 +1,53 @@
+/*	--------------------------------------------------------
+	screens/_help.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ HELP SCREEN
+	-------------------------------------------------------- */
+
+section.help {
+	@include outer-container;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 32px rgba(255, 255, 255, 0.3);
+
+	.title-wrap {
+		@include pad();
+		padding-bottom: 0;
+		cursor: default;
+	}
+
+	.contents {
+		@include pad();
+		font-size: em(20);
+		line-height: 26px;
+	}
+
+	p {
+		color: #ccc;
+	}
+
+	h2 {
+		color: $color-primary;
+	}
+
+	h3 {
+		color: #ccc;
+		margin-bottom: 5px;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: 1px solid #333;
+	}
+
+	a {
+		color: cyan;
+		text-decoration: none;
+
+		&:hover {
+			color: darkRed;
+		}
+	}
+}

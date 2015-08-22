@@ -1,0 +1,135 @@
+/*	--------------------------------------------------------
+	screens/_layout.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ TAROT GRID
+	-------------------------------------------------------- */
+
+$card-layout-margin: 4px;
+
+.tarot-layout {
+	@include clearfix;
+	position: relative;
+	// top: 45px;
+	top: 85px;
+	// width: 310px;
+	width: 700px;
+	margin: 0 auto;
+	// background-color: rgba(255, 255, 255, 0.1);
+
+	.tarot-grid-item {
+		float: left;
+		position: relative;
+		display: table;
+		@include size($card-width $card-height);
+		// @include size($card-width / 2 $card-height / 2);
+		margin: $card-layout-margin;
+		padding: 10px;
+		border: 1px solid transparent;
+
+		// background: rgba(0, 0, 0, 0.5);
+
+		@include transition(all 0.3s ease-in-out);
+
+		&.active {
+			background-color: rgba(0, 0, 0, 0.5);
+			border-color: rgba(106, 29, 255, 0.5);
+
+			&:hover {
+				border-color: $color-primary;
+				box-shadow: 0 0 16px $color-primary;
+
+				.position-num {
+					color: cyan;
+				}
+
+				.position-name {
+					text-shadow: 0 0 8px white;
+				}
+			}
+		}
+
+		&.has-card {
+			border: 0;
+
+			&.active {
+				background-color: transparent;
+			}
+		}
+
+		.position-num {
+			position: absolute;
+			width: 100%;
+			font-size: em(30);
+			text-align: center;
+			padding: 0 10px 10px 10px;
+			margin-left: -10px;
+
+			@include transition(color 0.3s ease-in-out);
+		}
+
+		.position-name {
+			display: table-cell;
+			font-style: italic;
+			color: white;
+			text-align: center;
+			vertical-align: middle;
+			text-shadow: 2px 1px 0 black;
+			cursor: default;
+			padding-top: 20px;
+			-ms-word-break: break-all;
+			word-break: break-all;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			hyphens: auto;
+
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+}
+
+
+
+/*	--------------------------------------------------------
+	+ LAYOUT CLASSES
+	-------------------------------------------------------- */
+
+.layout-ppf {
+	@include transform(translateY(-50px) scale(1.8));
+}
+
+.layout-the-cross {
+	@include transform(translateY(70px) scale(1.2));
+}
+
+.layout-celtic-cross {
+
+}
+
+
+// @media screen and (min-width: 480px) {
+// 	.tarot-layout {
+// 		width: 470px;
+// 		top: 65px;
+// 	}
+// }
+
+// @media screen and (min-width: 768px) {
+// 	.tarot-layout {
+// 		width: 768px;
+// 	}
+// }
+
+// @media screen and (min-width: 992px) {
+// 	.tarot-layout {
+// 		width: 980px;
+// 	}
+// }
+
+// @media screen and (min-width: 1200px) {
+// 	.tarot-layout {
+// 		width: 1100px;
+// 	}
+// }

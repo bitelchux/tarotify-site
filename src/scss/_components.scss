@@ -1,0 +1,78 @@
+/*	--------------------------------------------------------
+	_components.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ APP COMPONENTS
+	-------------------------------------------------------- */
+
+.btn {
+	float: left;
+	margin: 0 15px;
+	font-size: em(14);
+	font-style: italic;
+	cursor: pointer;
+
+	&.btn-filled {
+		color: white;
+		font-size: em(16);
+		margin: 0 5px;
+		padding: 7px 20px;
+		background-color: black;
+		letter-spacing: 1px;
+
+		@include transition(all 0.3s ease-in-out);
+
+		&.primary {
+			color: white;
+			background-color: $color-primary;
+
+			&:hover {
+				background-color: lighten($color-primary, 10%);
+			}
+		}
+
+		&:hover {
+			color: white;
+			background-color: lighten(black, 10%);
+			text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+		}
+	}
+
+	.fa {
+		font-size: em(32);
+
+		&.fa-gear { @include transition(color 0.3s ease-in-out); }
+		&.fa-gear:hover {
+			color: $color-accent;
+		}
+
+		&.fa-question-circle { @include transition(color 0.3s ease-in-out); }
+		&.fa-question-circle:hover {
+			color: $color-primary;
+		}
+
+		&.fa-random { @include transition(color 0.3s ease-in-out); }
+		&.fa-random:hover {
+			color: $color-accent2;
+		}
+	}
+}
+
+// @media screen and (min-width: 480px) {
+// 	.btn {
+// 		font-size: em(16);
+// 	}
+// }
+
+// @media screen and (min-width: 768px) {
+	.btn {
+		font-size: em(20);
+
+		&.btn-filled {
+			font-size: em(18);
+			padding: 10px 20px;
+		}
+	}
+// }

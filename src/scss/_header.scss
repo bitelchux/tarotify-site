@@ -1,0 +1,100 @@
+/*	--------------------------------------------------------
+	_header.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ APP HEADER
+	-------------------------------------------------------- */
+
+header.app-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0 10px;
+	z-index: 100;
+
+	.btn-wrap {
+		margin-top: 6px;
+	}
+
+	.btn-help {
+		margin-right: 0;
+	}
+
+	.btn-back {
+		@include transition(color 0.3s ease-in-out);
+
+		.fa {
+			float: left;
+			margin-right: 15px;
+		}
+
+		.txt {
+			float: left;
+			margin-top: 7px;
+			font-size: em(24, 20);
+			letter-spacing: 1px;
+		}
+
+		&:hover {
+			color: $color-accent;
+		}
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.tarotify-logo {
+	font-size: em(22);
+	font-weight: normal;
+	font-style: italic;
+	cursor: default;
+	margin: 6px 0;
+	text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+
+	@include transition(text-shadow 0.5s ease-in-out);
+
+	&:hover {
+		text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+	}
+}
+
+// @media screen and (min-width: 480px) {
+
+// 	header.app-header {
+// 		height: 60px;
+// 		padding: 0 15px;
+
+// 		.btn-wrap {
+// 			margin-top: 14px;
+// 		}
+// 	}
+
+// 	.tarotify-logo {
+// 		font-size: em(26);
+// 		margin: 15px 0;
+// 	}
+// }
+
+// @media screen and (min-width: 768px) {
+
+	header.app-header {
+		height: 80px;
+		padding: 0 20px;
+
+		.btn-wrap {
+			margin-top: 22px;
+		}
+	}
+
+	.tarotify-logo {
+		font-size: em(32);
+		margin: 22px 0;
+	}
+// }

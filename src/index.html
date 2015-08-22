@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="tarotifyApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Tarotify - Free Online Tarot Reader</title>
+
+		<meta name="description" content="Free online tarot reader.">
+		<meta name="author" content="Keenan Staffieri">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+		<!-- Stylesheets-->
+		<link rel="stylesheet" href="css/master.css">
+	</head>
+	<body ng-controller="AppCtrl">
+
+		<div class="app-wrap" ng-class="themeBg">
+
+			<!-- Header -->
+			<app-header></app-header>
+
+			<!-- View -->
+			<div class="app-view animated" ng-view></div>
+
+			<!-- Footer -->
+			<app-footer></app-footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<!-- htmlbuild:js -->
+		<!-- endbuild -->
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-40930630-3', 'tarotify.com');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

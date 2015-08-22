@@ -1,0 +1,75 @@
+/*	--------------------------------------------------------
+	screens/_settings.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ SETTINGS SCREEN
+	-------------------------------------------------------- */
+
+section.settings {
+	@include outer-container;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 32px rgba(255, 255, 255, 0.3);
+
+	.title-wrap {
+		@include pad();
+		padding-bottom: 0;
+		cursor: default;
+	}
+
+	.contents {
+		@include pad();
+		font-size: em(20);
+		line-height: 26px;
+	}
+
+	.opt-item {
+		margin-bottom: 50px;
+	}
+
+	.opt-lbl, .checkbox {
+		text-align: center;
+	}
+
+	.opt-lbl {
+		cursor: default;
+	}
+
+	.checkbox {
+		font-size: em(24);
+
+		&:hover {
+			color: #ccc;
+		}
+	}
+
+	.fa-check-square-o {
+		color: limeGreen;
+	}
+
+	select {
+		display: block;
+		margin: 0 auto;
+		background: black;
+		padding: 15px;
+		font-size: em(20);
+		line-height: 1;
+		border: 1px solid #333;
+		border-radius: 0;
+		height: 60px;
+		-webkit-appearance: none;
+		cursor: pointer;
+	}
+
+	.note {
+		display: block;
+		font-size: em(12);
+		color: #999;
+		font-style: italic;
+		text-align: center;
+		margin-top: -20px;
+		margin-bottom: 20px;
+		cursor: default;
+	}
+}

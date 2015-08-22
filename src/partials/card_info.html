@@ -1,0 +1,42 @@
+<section class="card-info view-wrap">
+
+	<div class="left-col">
+		<img class="card-img" ng-class="{reversed: isReversed}" ng-src="{{ card.image_url }}" alt="{{ card.name }}">
+	</div>
+
+	<div class="right-col">
+		<div class="contents">
+			<h1>{{ card.name }}</h1>
+			<span class="reversed-lbl" ng-show="isReversed">Reversed</span>
+			<div class="card-class-cont">
+				<span class="class">{{ card.class }}</span>
+				<span class="bull" ng-show="card.suite">&bull;</span>
+				<span class="suite" ng-class="card.suite | lowercase" ng-show="card.suite">{{ card.suite }}</span>
+			</div>
+
+			<div ng-if="position_description">
+				<span class="lbl">Meaning of Position:</span>
+				<p>{{ position_description }}</p>
+			</div>
+
+			<div ng-if="!isReversed">
+				<span class="lbl">Key Words:</span>
+				<p class="meaning" ng-bind-html="card.meaning"></p>
+				<span class="lbl dim">Key Words (Reversed):</span>
+				<p class="meaning dim" ng-bind-html="card.meaning_reversed"></p>
+			</div>
+
+			<div ng-if="isReversed">
+				<span class="lbl">Key Words (Reversed):</span>
+				<p class="meaning" ng-bind-html="card.meaning_reversed"></p>
+				<span class="lbl dim">Key Words:</span>
+				<p class="meaning dim" ng-bind-html="card.meaning"></p>
+			</div>
+
+			<span class="lbl">Further Reading:</span>
+			<p ng-bind-html="card.description"></p>
+			<p class="source" ng-bind-html="card.description_source"></p>
+		</div>
+	</div>
+
+</section>

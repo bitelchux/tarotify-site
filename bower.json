@@ -1,0 +1,11 @@
+{
+  "name": "tarotify-site",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular": "~1.2.13",
+    "angular-route": "~1.2.14",
+    "underscore": "~1.6.0",
+    "angular-animate": "~1.2.14",
+    "animate.scss": "*"
+  }
+}

@@ -1,0 +1,77 @@
+/*	--------------------------------------------------------
+	_cards.scss
+	========================================================
+	-------------------------------------------------------- */
+
+$card-width: 92px;
+$card-height: 158px;
+
+// $card-width: 240px;
+// $card-height: 420px;
+
+// $card-width: 40px;
+// $card-height: 62px;
+$card-nudge: 30px;
+$card-spacing: 10px;
+
+/*	--------------------------------------------------------
+	+ TAROT CARDS
+	-------------------------------------------------------- */
+
+// .tarot-cards {
+// 	position: absolute;
+// 	bottom: 100px;
+// 	left: 50px;
+// }
+
+.tarot-card {
+	position: absolute;
+	top: 0;
+	left: 0;
+	@include size($card-width $card-height);
+	z-index: 20;
+	// @include size($card-width / 2 $card-width / 2);
+
+	&.reversed {
+		@include transform(rotate(180deg));
+	}
+
+	img {
+		position: absolute;
+		width: 100%;
+		border: 1px solid black;
+		border-radius: 10px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+		z-index: 10;
+
+		@include transition(all 0.3s ease-in-out);
+
+		&:hover {
+			border-color: white;
+			box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+			z-index: 20;
+			cursor: pointer;
+		}
+
+		// &:hover {
+		// 	border-color: white;
+		// 	@include transform(translateY(-$card-nudge));
+		// 	box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+		// 	z-index: 20;
+		// }
+	}
+
+	// @for $i from 0 through 77 {
+	// 	&.tarot-card-#{$i} {
+	// 		@include transform(translateX($card-spacing * $i));
+
+	// 		&.reversed {
+	// 			@include transform(translateX($card-spacing * $i) rotate(180deg));
+
+	// 			img:hover {
+	// 				@include transform(translateY($card-nudge));
+	// 			}
+	// 		}
+	// 	}
+	// }
+}

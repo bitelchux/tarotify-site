@@ -1,0 +1,69 @@
+/*	--------------------------------------------------------
+	screens/_new_reading.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ NEW READING SCREEN
+	-------------------------------------------------------- */
+
+section.new {
+	@include outer-container;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 32px rgba(255, 255, 255, 0.3);
+
+	.title-wrap {
+		@include pad();
+		padding-bottom: 0;
+		cursor: default;
+
+		h2 {
+			color: #ccc;
+			text-align: right;
+			font-style: italic;
+			font-weight: normal;
+			margin: 0;
+			letter-spacing: 1px;
+		}
+	}
+
+	.contents {
+		@include pad();
+		font-size: em(20);
+		line-height: 26px;
+	}
+
+	ul.tarot-layouts {
+		@include cleanlist;
+		border: 1px solid #1a1a1a;
+
+		li {
+			font-size: em(24);
+			font-style: italic;
+			color: cyan;
+			padding: 30px;
+			text-align: center;
+			letter-spacing: 1px;
+			background-color: black;
+			cursor: pointer;
+
+			@include transition(all 0.3s ease-in-out);
+
+			&:hover {
+				background-color: #1a1a1a;
+				letter-spacing: 5px;
+			}
+
+			span.description {
+				display: block;
+				width: 80%;
+				margin: 0 auto;
+				color: #ccc;
+				font-size: em(16, 30);
+				letter-spacing: 0;
+				line-height: 22px;
+				margin-top: 10px;
+			}
+		}
+	}
+}

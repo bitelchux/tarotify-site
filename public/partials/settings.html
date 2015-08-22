@@ -1,0 +1,31 @@
+<section class="settings view-wrap">
+
+	<div class="title-wrap">
+		<h1 class="view-title">Settings</h1>
+	</div>
+
+	<div class="contents">
+
+		<div class="opt-item">
+			<h4 class="opt-lbl">Select Background</h4>
+			<select ng-model="opt_selectedBg" ng-change="selectBackground()" ng-options="bg.name for bg in backgrounds">
+			</select>
+		</div>
+
+		<div class="opt-item">
+			<h4 class="opt-lbl">Allow Reversals</h4>
+			<div class="checkbox">
+				<span class="fa" ng-class="{true: 'fa-check-square-o', false: 'fa-square-o'}[opt_showReversals]" ng-click="toggleReversals()"></span>
+			</div>
+		</div>
+
+		<div class="opt-item">
+			<h4 class="opt-lbl">Major Arcana Only</h4>
+			<span class="note">*Will clear cards</span>
+			<div class="checkbox">
+				<span class="fa" ng-class="{true: 'fa-check-square-o', false: 'fa-square-o'}[opt_majorArcanaOnly]" ng-click="toggleMajorArcana()"></span>
+			</div>
+		</div>
+	</div>
+
+</section>

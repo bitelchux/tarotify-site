@@ -1,0 +1,125 @@
+/*	--------------------------------------------------------
+	screens/_card_info.scss
+	========================================================
+	-------------------------------------------------------- */
+
+/*	--------------------------------------------------------
+	+ CARD INFO SCREEN
+	-------------------------------------------------------- */
+
+section.card-info {
+	@include outer-container;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	.left-col {
+		@include span-columns(3);
+		@include pad(15px);
+	}
+
+	.right-col {
+		@include span-columns(9);
+		@include pad();
+		padding-left: 0;
+		@include omega();
+	}
+
+	.card-img {
+		width: 100%;
+		border: 1px solid #333;
+		border-radius: 12px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+
+		&.reversed {
+			@include transform(rotate(180deg));
+		}
+	}
+
+	.contents {
+		position: relative;
+		height: 630px;
+		overflow-y: scroll;
+		padding-right: 20px;
+		font-size: em(20);
+		line-height: 26px;
+		text-shadow: 0 2px 4px black;
+
+		h1 {
+			width: 75%;
+			margin-top: 5px;
+			font-weight: normal;
+			font-style: italic;
+		}
+
+		.reversed-lbl {
+			position: absolute;
+			right: 20px;
+			color: red;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin-top: 0;
+		}
+
+		.lbl {
+			display: block;
+			color: cyan;
+			font-size: em(12);
+			font-weight: bold;
+
+			&.dim {
+				opacity: 0.5;
+			}
+		}
+
+		.card-class-cont {
+			@include clearfix;
+			width: 100%;
+			margin-bottom: 15px;
+		}
+
+		.class {
+			float: left;
+			color: #ccc;
+		}
+
+		.bull {
+			float: left;
+			margin: 0 10px;
+		}
+
+		.suite {
+			float: left;
+
+			&.wands {
+				color: orange;
+			}
+
+			&.pentacles {
+				color: green;
+			}
+
+			&.swords {
+				color: yellow;
+			}
+
+			&.cups {
+				color: lightBlue;
+			}
+		}
+
+		.meaning {
+			font-style: italic;
+
+			&.dim {
+				opacity: 0.5;
+			}
+		}
+
+		.source {
+			color: silver;
+			font-size: em(12);
+			font-style: italic;
+		}
+	}
+}
